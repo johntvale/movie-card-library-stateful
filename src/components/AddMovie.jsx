@@ -5,6 +5,7 @@ import SubtitleInput from './SubtitleInput';
 import ImagePath from './ImagePath';
 import TextArea from './TextArea';
 import NumberInput from './NumberInput';
+import GenderSelectAM from './GenderSelectAM';
 
 class AddMovie extends React.Component {
   constructor() {
@@ -28,7 +29,7 @@ class AddMovie extends React.Component {
   }
 
   render() {
-    const { title, subtitle, imagePath, storyline, rating } = this.state;
+    const { title, subtitle, imagePath, storyline, rating, genre } = this.state;
     return (
       <div>
         <h2>Adicionar filme à lista</h2>
@@ -38,6 +39,7 @@ class AddMovie extends React.Component {
           <ImagePath value={ imagePath } onChange={ this.handleChange } />
           <TextArea value={ storyline } onChange={ this.handleChange } />
           <NumberInput value={ rating } onChange={ this.handleChange } />
+          <GenderSelectAM value={ genre } onChange={ this.handleChange } />
         </form>
       </div>
     );

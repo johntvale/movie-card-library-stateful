@@ -21,7 +21,7 @@ class NumberInput extends React.Component {
 }
 
 NumberInput.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
