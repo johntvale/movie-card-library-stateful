@@ -11,6 +11,7 @@ class SearchBar extends React.Component {
     const { onSearchTextChange, onBookmarkedChange, onSelectedGenreChange } = this.props;
     return (
       <div>
+        <h2>Pequisar filme</h2>
         <form data-testid="search-bar-form">
           <IncludesText value={ searchText } onChange={ onSearchTextChange } />
           <label data-testid="checkbox-input-label" htmlFor="show-favorites">
