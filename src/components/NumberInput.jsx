@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class TitleInput extends React.Component {
+class NumberInput extends React.Component {
   render() {
     const { value, onChange } = this.props;
     return (
-      <label data-testid="title-input-label" htmlFor="title-input">
-        Título
+      <label data-testid="rating-input-label" htmlFor="rating-input">
+        Avaliação
         <input
-          id="title-input"
-          type="text"
-          name="title"
-          data-testid="title-input"
+          id="rating-input"
+          type="number"
+          name="rating"
+          data-testid="rating-input"
           value={ value }
           onChange={ onChange }
         />
@@ -20,9 +20,9 @@ class TitleInput extends React.Component {
   }
 }
 
-TitleInput.propTypes = {
+NumberInput.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default TitleInput;
+export default NumberInput;
