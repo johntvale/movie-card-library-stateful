@@ -11,6 +11,7 @@ class AddMovie extends React.Component {
   constructor() {
     super();
     this.handleChange = this.handleChange.bind(this);
+    // this.handleButton = this.handleButton.bind(this);
     this.state = {
       title: '',
       subtitle: '',
@@ -23,10 +24,28 @@ class AddMovie extends React.Component {
 
   handleChange({ target }) {
     const { name, value } = target;
+    // this.props.rating
+    // let atual = 0;
+    // if (typeof(rating) === 'number') {
+    //   atual =
+    // }
     this.setState({
       [name]: value,
     });
   }
+
+  // handleButton(event) {
+  //   event.preventDefault();
+  //   this.setState({
+  //     title: '',
+  //     subtitle: '',
+  //     imagePath: '',
+  //     storyline: '',
+  //     rating: 0,
+  //     genre: 'action',
+  //   });
+  //   console.log(this.state);
+  // }
 
   render() {
     const { title, subtitle, imagePath, storyline, rating, genre } = this.state;
@@ -40,6 +59,13 @@ class AddMovie extends React.Component {
           <TextArea value={ storyline } onChange={ this.handleChange } />
           <NumberInput value={ rating } onChange={ this.handleChange } />
           <GenderSelectAM value={ genre } onChange={ this.handleChange } />
+          <button
+            data-testid="send-button"
+            type="button"
+            onClick={ this.handleButton }
+          >
+            Adicionar filme
+          </button>
         </form>
       </div>
     );
