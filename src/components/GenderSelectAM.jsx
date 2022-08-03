@@ -5,11 +5,16 @@ class GenderSelectAM extends React.Component {
   render() {
     const { value, onChange } = this.props;
     return (
-      <label data-testid="genre-input-label" htmlFor="Gender-Select-AM">
+      <label
+        data-testid="genre-input-label"
+        className="form-input-label"
+        htmlFor="Gender-Select-AM"
+      >
         Gênero
         <select
-          name="genre"
           id="Gender-Select-AM"
+          className="form-input"
+          name="genre"
           data-testid="genre-input"
           value={ value }
           onChange={ onChange }

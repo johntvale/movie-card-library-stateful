@@ -32,7 +32,7 @@ class AddMovie extends React.Component {
 
   handleButton() {
     const { onClick } = this.props;
-    onClick(this.setState);
+    onClick(this.state);
     this.setState({
       title: '',
       subtitle: '',
@@ -46,8 +46,8 @@ class AddMovie extends React.Component {
   render() {
     const { title, subtitle, imagePath, storyline, rating, genre } = this.state;
     return (
-      <div>
-        <h2>Adicionar filme à lista</h2>
+      <div className="form-container">
+        <h3>Não encontrou o que procurava ? Adicione um filme à lista 😉</h3>
         <form data-testid="add-movie-form">
           <TitleInput value={ title } onChange={ this.handleChange } />
           <SubtitleInput value={ subtitle } onChange={ this.handleChange } />

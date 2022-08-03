@@ -19,9 +19,30 @@ body {
   text-align: center;
 }
 
+.form-container {
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 10px 5%;
+  padding: 10px;
+}
+
+h3 {
+  font-size: large;
+  margin-top: 15px;
+}
+
+.form-item {
+  margin-bottom: 15px;
+}
+
+.form-input, .form-input-label {
+  width: 100%;
+}
+
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  margin: auto 5%;
   padding: 48px 30px;
 }
 
