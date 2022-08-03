@@ -4,7 +4,7 @@
   O Movie Card Library Stateful é uma biblioteca de filmes estática, onde é possível realizar filtragens para exibir somente os filmes selecionados.
   Também é possível adicionar novos filmes, atualizando a lista de filmes disponíveis inicialmente.
 
-  Você pode acessá-lo <a href="https://johntvale.github.io/movie-card-library-stateful/">clicando aqui :rocket: :smile:
+  Você pode acessá-lo <a href="https://johntvale.github.io/movie-card-library-stateful/">clicando aqui</a> :rocket: :smile:
 
 ---
 
